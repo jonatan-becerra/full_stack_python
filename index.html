@@ -1,0 +1,38 @@
+<form action="process.php" method="post">
+    <p>formulario de registro</p>
+    <label for="nombre">Nombre:</label>
+    <br>
+    <input type="text" id="nombre" name="nombre">
+   <br>
+    <label for="apellido">Apellido:</label>
+    <br>
+    <input type="text" id="apellido" name="apellido">
+   <br>
+    <label for="email">Email:</label>
+    <br>
+    <input type="text" id="email" name="email">
+   <br>
+    <p>Selecciona tu género:</p>
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+   
+    <label for="femenino">Female</label>
+    <input type="radio" id="femenino" name="genero" value="femenino">
+    
+    <label for="decline">Prefiero no decir</label>
+    <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir">
+   
+    
+    <p>una breve descripción de ti:</p>
+    <textarea name="descripcion"></textarea>
+    <br>
+    <label for="password">Contraseña:</label>
+    <br>
+    <input type="password" id="password" name="password">
+    <br>
+   <label for="pw_confirm">Confirmación de Contraseña:</label>
+   <br>
+   <input type="password" id="pw_confirm" name="password_confirmacion">
+   <br> <br> <br>
+   <input type="submit" value="enviar">
+</form>
