@@ -1,0 +1,35 @@
+span {
+  border-left: solid rgb(224, 221, 221);
+  font-size: 30px;
+  margin: 20px;
+}
+#mision {
+  text-justify: auto;
+}
+#lorem1 {
+  font-size: 15px;
+  text-align: center;
+}
+
+#metocar {
+  background-image: url(fondo.jpg);
+}
+#proyectosimg {
+  background-color: rgb(81, 116, 54);
+  padding: 20px;
+  color: white;
+}
+.subtitulo {
+  margin: 25px;
+  padding: 20px;
+  text-align: center;
+}
+#contactos {
+  padding: 25px;
+}
+#foto1 {
+  border-radius: 50%;
+}
+#foto2 {
+  border-radius: 50%;
+}
