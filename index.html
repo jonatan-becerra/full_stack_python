@@ -14,16 +14,20 @@
              }
              return color;
           }
+          
           $(document).ready(function(){
              $('#large_box').click(function(){
+                console.log('el color es:', random_color())
              $("#large_box").css("background-color", random_color());
-             $(".middle_box, .side_box").css("background-color", random_color());
-                alert('you clicked the big box!'); 
-                
-         //utilizamos el stopPropagation  para evitar que nuestro flujo de eventos se propage a documentos hijos 
+             $(".middle_box, .side_box1, .side_box2").css("background-color", random_color());                     
+        
              })
-             $('.side_box').click(function(event){
-                $(".side_box, .middle_box").css("background-color", random_color());
+             $('.side_box1').click(function(event){
+                $(".side_box2, .middle_box").css("background-color", random_color());
+                event.stopPropagation();
+             })
+             $('.side_box2').click(function(event){
+                $(".side_box1, .middle_box").css("background-color", random_color());
                 event.stopPropagation();
              })
              $('.middle_box').click(function(event){
@@ -59,9 +63,9 @@
    <body>
       <h1>¡El ColorClicker de Codingdojo! </h1>
       <div id='large_box'>
-          <div class='side_box'></div>
+          <div class='side_box1'></div>
           <div class='middle_box'></div>
-          <div class='side_box'></div>
+          <div class='side_box2'></div>
       </div>
       <h2>Rules</h2>
       <h3>1. ¡Cliquear el cuadro grande debería cambiar los colores de fondo de los cuadros pequeños y grandes!</h3>
